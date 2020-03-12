@@ -1,0 +1,6 @@
+<aura:component controller="URLShortnerController">
+    <aura:attribute name="url" type="string" />
+    
+    <lightning:input value="{!v.url}" label="Long URL" />
+    <lightning:button label="Shorten me" onClick="{ !c.shortenMe}" />
+</aura:component>
